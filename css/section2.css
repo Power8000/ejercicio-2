@@ -1,0 +1,220 @@
+.seccion2{
+	position: relative;
+  background: #e4ebf3;
+	width: 100%;
+	padding: 100px 0;
+}
+.seccion2 .background{
+	position: relative;
+	font-size: 0;
+	padding: 0 20px;
+}
+.seccion2 .background img{
+	width: 100%;
+}
+.seccion2 .content-seccion2 .image-content2{
+	color: #3e5162;
+}
+.seccion2 .content-seccion2{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.seccion2 .content-seccion2 .header{
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin-top: 25px;
+	color: #3e5162;
+
+}
+.seccion2 .content-seccion2 .header h2{
+	font-size: 18px;
+	line-height: 20px;
+
+}
+.seccion2 .content-seccion2 .header p{
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 20px;
+	padding: 10px 35px;
+}
+.seccion2 .content-seccion2 .Parraf{
+	display: none;
+	    max-width: 500px;
+}
+.seccion2 .content-seccion2 .footer{
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	margin-top: 20px;
+	color: #3e5162;
+}
+.seccion2 .content-seccion2 .footer .points-incontent {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.seccion2 .content-seccion2 .footer .points-incontent .buttom{
+	width: 10px;
+	height: 10px;
+	border-radius: 05px;
+	background: #3c95d7;
+	margin-right: 5px;
+}
+.seccion2 .content-seccion2 .footer .points-incontent .buttom:hover{
+	background: #c0c9d2;
+}
+.seccion2 .content-seccion2 .footer .content-learn{
+	display: flex;
+	justify-content: center;
+}
+.seccion2 .content-seccion2 .footer a{
+background: #3598db;
+padding: 12px 30px;
+border-radius: 20px;
+color: white;
+text-align: center;
+display: flex;
+flex-direction: row;
+text-decoration: none;
+}
+.seccion2 .content-seccion2 .footer a:hover{
+background: #a2abb2;
+transition: 0.5s;
+}
+.seccion2 .caja{
+
+	bottom:-200px;
+  left: -150px;
+	width: 350px;
+	position: absolute;;
+}
+.seccion2 .caja img{
+	width: 100%;
+}
+@media screen and (min-width: 480px){
+
+	.seccion2 .background{
+		display: flex;
+		justify-content: center;
+	}
+	.seccion2 .background img{
+		width: 440px;
+		height: 450px;
+	}
+}
+@media screen and (min-width: 768px){
+
+	.seccion2 .content-seccion2 .header{
+		display: none;
+	}
+	.seccion2 .content-seccion2 .image-content2 {
+		padding: 0px 28px;
+  }
+	.seccion2 .content-seccion2 .image-content2 .header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		margin-top: 80px;
+		color: #3e5162;
+	}
+	.seccion2 .content-seccion2 .image-content2 a{
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 26px;
+		transition: 0.5s;
+		color :#a2abb2
+	}
+	.seccion2 .content-seccion2 .image-content2 a:hover{
+		color: #3e5162;
+		font-weight:bold;
+	}
+	.seccion2 .background{
+		margin-top: 80px;
+    padding: initial;
+		margin-right: 20px;
+	}
+	.seccion2 .background img{
+		width: 100%
+	}
+	.seccion2 .content-seccion2 .Parraf {
+    display: block;
+  }
+	.seccion2 .image-content2{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.seccion2 .caja{
+		width: 400px;
+		left: -175px;
+	}
+}
+@media screen and (min-width: 900px){
+	.seccion2 .background {
+    margin-right: 30px;
+	}
+	.seccion2 .content-seccion2 .header p {
+	    font-size: 16px;
+	    line-height: 22px;
+	}
+	.seccion2 .content-seccion2 .header h2 {
+	    font-size: 22px;
+	    line-height: 22px;
+	}
+.seccion2 .content-seccion2 .image-content2 {
+		padding: 0px 40px;
+  }
+.seccion2 .content-seccion2 .image-content2 a {
+    font-size: 16px;
+    line-height: 28px;
+}
+.seccion2 .content-seccion2 .footer{
+	margin-top: 110px;
+}
+.seccion2 .content-seccion2 .footer .Well {
+	display: none;
+}
+.seccion2 .content-seccion2 .footer .points-incontent {
+display: none;
+}
+
+}
+@media screen and (min-width: 1000px){
+	.seccion2 .background {
+    margin-right: 40px;
+	}
+	.seccion2 .background img {
+    width: 504px;
+}
+.seccion2 .content-seccion2 .header p {
+padding: initial;
+margin-top: 20px;
+}
+	.seccion2 .content-seccion2 .image-content2 {
+			padding: 0px 50px;
+	  }
+		.seccion2 .content-seccion2 .image-content2 .header {
+		    text-align: left;
+		}
+		.seccion2 .content-seccion2 .image-content2 a {
+		    line-height: 32px;
+		}
+		.seccion2 .content-seccion2 .Parraf {
+    width: 400px;
+}
+.seccion2 .caja {
+    width: 500px;
+	  left: -200px;
+}
+.seccion2 .content-seccion2 .footer a {
+	font-size: 20px;
+}
+}

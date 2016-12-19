@@ -1,0 +1,143 @@
+.seccion3{
+  background: white;
+	width: 100%;
+	height: 700px;
+  z-index: -5;
+}
+.seccion3  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    color: #3e5162;
+    height: 140px;
+}
+.seccion3 .header h3 {
+    font-size: 18px;
+    line-height: 20px;
+}
+.seccion3  .header p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    padding: 10px 35px;
+}
+.seccion3  .content-scroll {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+
+}
+.seccion3  .content-scroll .children .fond{
+  position: relative;
+
+}
+.seccion3 .children{
+      border: 2px solid #d4e1f1;
+      margin: 10px 20px;
+      width: 270px;
+      min-width: 270px;
+      color: #3e5162;
+}
+.seccion3 .children .background{
+  font-size: 0;
+}
+.seccion3 .children .fond{
+  border: 2px solid #d4e1f1;
+}
+.seccion3 .children .fond .icon{
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  right: 20px;
+}
+.seccion3 .children .fond img{
+width: 100%;
+}
+.seccion3 .children .letter{
+  padding: 0 10px;
+margin-top: 10px;
+line-height: 20px;
+}
+.seccion3 .children .letter a{
+  text-decoration: none;
+  font-size: 16px;
+    line-height: 20px;
+    color: #3e5162;
+
+}
+.seccion3 .children .letter span{
+  font-size: 14px;
+    line-height: 16px;
+    color: #ccc;
+}
+.seccion3 .children .letter .by::before {
+  content: "by:";
+  color: #3e5162;
+}
+.seccion3 .children .letter .view{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.seccion3 .children .letter .view .estrellas img{
+  width: 20px;
+}
+.seccion3 .children .letter .view .Visitas{
+  margin-left: 10px;
+}
+.seccion3 .children .letter .view .Visitas::after{
+  content: " reviews";
+  color: #3e5162;
+}
+.seccion3 .children .general{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 2px 10px;
+  border: 1px solid #d4e1f1;
+  background: #fafbfd
+}
+.seccion3 .children .general .visitors,
+.seccion3 .children .general .price{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.seccion3 .children .general  img{
+  width: 20px;
+  margin-right: 5px;
+}
+.seccion3 .footer{
+    display: flex;
+    justify-content: center;
+}
+.seccion3 .footer a{
+    background: #3598db;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.seccion3 .footer a:hover{
+  background: #a2abb2;
+  transition: 0.5s;
+}
+@media screen and (min-width: 900px){
+
+  .seccion3 .header h3 {
+      font-size: 22px;
+      line-height: 24px;
+  }
+  .seccion3  .header p {
+      font-size: 18px;
+      line-height: 22px;
+  }
+}

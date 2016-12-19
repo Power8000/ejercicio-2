@@ -1,0 +1,38 @@
+.seccion4{
+  background: #e4ebf3;
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+}
+.seccion4 .header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #374a5b;
+}
+.seccion4 .header h3{
+  font-size: 18px;
+  line-height: 20px;
+}
+.seccion4 .header p{
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  padding: 10px 35px;
+}
+.seccion4 .contenedor .target .description a{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  transition: 0.5s;
+  color: #a2abb2;
+}
+
+.seccion4 .caja{
+  position: absolute;
+}
+.seccion4 .caja img{
+  width: 100%;
+}

@@ -2,7 +2,11 @@
 	position: relative;
   background: #e4ebf3;
 	width: 100%;
-	padding: 100px 0;
+}
+.seccion2 .imagen{
+	position: absolute;
+	height: 100%;
+	width: 100%;
 }
 .seccion2 .background{
 	position: relative;
@@ -19,6 +23,7 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
+	padding: 80px 0;
 }
 .seccion2 .content-seccion2 .header{
 
@@ -90,10 +95,10 @@ transition: 0.5s;
 }
 .seccion2 .caja{
 
-	bottom:-200px;
+	bottom:-90px;
   left: -150px;
 	width: 350px;
-	position: absolute;;
+	position: absolute;
 }
 .seccion2 .caja img{
 	width: 100%;
@@ -178,6 +183,9 @@ transition: 0.5s;
 }
 .seccion2 .content-seccion2 .footer{
 	margin-top: 110px;
+}
+.seccion2 .content-seccion2 .footer a {
+    font-size: 20px;
 }
 .seccion2 .content-seccion2 .footer .Well {
 	display: none;

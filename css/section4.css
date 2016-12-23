@@ -2,7 +2,17 @@
   background: #e4ebf3;
   width: 100%;
   position: relative;
+}
+.seccion4 .contenedors{
+  display: flex;
+  flex-direction: column;
+  position: relative;
   padding: 60px 0;
+}
+.seccion4 .imagen{
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 .seccion4 .header{
   display: flex;
@@ -22,17 +32,180 @@
   margin-bottom: 20px;
   padding: 10px 35px;
 }
+.seccion4 .contenedor .target .linkiable{
+  border-top: 1px solid #e4ebf3;
+  border-bottom: 1px solid #e4ebf3;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  cursor:pointer;
+  transition: 0.5s;
+  line-height: 26px;
+  padding: 4px 0;
+  color: #374a5b;
+  background: #f2f5fa;
+
+}
+.seccion4 .contenedor .target .linkiable:hover{
+  background: #e4ebf3
+}
+.seccion4 .contenedor .target .description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  background: #e4ebf3;
+}
 .seccion4 .contenedor .target .description a{
   text-decoration: none;
   font-size: 14px;
   line-height: 26px;
-  transition: 0.5s;
   color: #a2abb2;
 }
-
+.seccion4 .contenedor .target .description a:hover{
+  color:#374a5b;
+}
+.seccion4 .contenedor .target .linkiable + #description :hover{
+  display: flex;
+}
+.seccion4 .contenedor .target #marketing{
+  display: flex;
+}
+.seccion4 .footer{
+  width: 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seccion4 .footer h3{
+  font-size: 20px;
+  line-height: 20px;
+  color: #374a5b;
+  margin-bottom: 20px;
+}
+.seccion4 .footer p{
+  font-size: 14px;
+  line-height: 22px;
+  color: #a2abb2;
+}
+.seccion4 .footer .BecometoInstructor{
+  background: #f39c0f;
+  padding: 12px 22px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-top: 30px;
+  align-self: baseline;
+}
 .seccion4 .caja{
   position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: -40px;
+  right: -40px;
 }
 .seccion4 .caja img{
   width: 100%;
+}
+.mostrar{
+  top: 0;
+}
+@media screen and (min-width: 480px){
+
+  .seccion4 .footer .BecometoInstructor {
+    font-size: 20px;
+  }
+  .seccion4 .header h3 {
+    font-size: 20px;
+  }
+  .seccion4 .caja{
+    width: 170px;
+    height: 170px;
+  }
+
+}
+@media screen and (min-width: 768px){
+  .seccion4 .caja {
+    width: 200px;
+    height: 200px;
+    bottom: -40px;
+    right: -20px;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .seccion4 .caja {
+      width: 250px;
+      height: 250px;
+  }
+}
+@media screen and (min-width: 1000px){
+  .seccion4 .contenedor{
+    display: flex;
+    justify-content: center;
+  }
+  .seccion4 .header {
+    align-items: flex-start;
+    text-align: none;
+    padding: 0 50px;
+    color: #374a5b;
+  }
+  .seccion4 .header h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .seccion4 .header p {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .seccion4 .contenedor .target{
+    width: 33%;
+    margin-bottom: 50px;
+  }
+  .seccion4 .contenedor .target .linkiable{
+    background: none;
+    text-align: left;
+    display: inline;
+  }
+  .seccion4 .contenedor .target .description{
+    background: none;
+    align-items: flex-start;
+  }
+  .seccion4 .contenedor .first-part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0 50px;
+    width: 100%;
+  }
+  .seccion4 .contenedor .second-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .seccion4 .contenedor .target .description{
+    display: flex;
+  }
+  .seccion4 .footer{
+    width: 80%;
+    padding: 50px;
+  }
+  .seccion4 .caja{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    bottom: -80px;
+    right: 10px;
+  }
+  .seccion4 .footer .BecometoInstructor{
+    font-size: 18px;
+  }
 }

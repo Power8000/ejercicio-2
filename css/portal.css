@@ -140,7 +140,6 @@
 	}
 	.portal .brocontent .background .destock{
 		display: block;
-		width: auto;
 	}
 }
 @media screen and (min-width: 768px){

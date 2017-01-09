@@ -23,22 +23,19 @@
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding: 80px 0;
+	padding: 60px 0;
 }
 .seccion2 .content-seccion2 .header{
-
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
 	margin-top: 25px;
 	color: #3e5162;
-
 }
 .seccion2 .content-seccion2 .header h2{
 	font-size: 18px;
 	line-height: 20px;
-
 }
 .seccion2 .content-seccion2 .header p{
 	font-size: 14px;
@@ -46,9 +43,9 @@
 	margin-bottom: 20px;
 	padding: 10px 35px;
 }
-.seccion2 .content-seccion2 .Parraf{
+.seccion2 .content-seccion2 .Parraf .header,
+.seccion2 .content-seccion2 .Parraf .Courses{
 	display: none;
-	    max-width: 500px;
 }
 .seccion2 .content-seccion2 .footer{
 	font-size: 16px;
@@ -69,56 +66,75 @@
 	width: 10px;
 	height: 10px;
 	border-radius: 05px;
-	background: #3c95d7;
+	background: #c0c9d2;
 	margin-right: 5px;
 }
 .seccion2 .content-seccion2 .footer .points-incontent .buttom:hover{
-	background: #c0c9d2;
+	background: #3c95d7;
+}
+.seccion2 .content-seccion2 .footer .points-incontent .buttom.select{
+	background: #3096d4;
+	position: relative;
+}
+.seccion2 .content-seccion2 .footer .points-incontent .buttom.select::after {
+	content: '';
+	display: block;
+	width: 2px;
+	height: 15px;
+	background:#3096d4;
+	position: absolute;
+	left: calc(50% - 1px);
+	bottom: 100%;
+
 }
 .seccion2 .content-seccion2 .footer .content-learn{
 	display: flex;
 	justify-content: center;
 }
-.seccion2 .content-seccion2 .footer a{
-background: #3598db;
-padding: 12px 30px;
-border-radius: 20px;
-color: white;
-text-align: center;
-display: flex;
-flex-direction: row;
-text-decoration: none;
+.seccion2 .content-seccion2 .footer .content-learn a{
+	background: #3598db;
+	padding: 12px 20px;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
 }
-.seccion2 .content-seccion2 .footer a:hover{
-background: #a2abb2;
-transition: 0.5s;
+.seccion2 .content-seccion2 .footer .content-learn a:hover{
+	background: #a2abb2;
+	transition: 0.5s;
 }
 .seccion2 .caja{
-
 	bottom:-90px;
   left: -150px;
 	width: 350px;
 	position: absolute;
 }
+.seccion2 .content-seccion2 .footer .content-learn img{
+	margin-left: 10px;
+}
 .seccion2 .caja img{
 	width: 100%;
 }
 @media screen and (min-width: 480px){
-
 	.seccion2 .background{
 		display: flex;
 		justify-content: center;
 	}
 	.seccion2 .background img{
-		width: 440px;
-		height: 450px;
+		width: 380px;
+		height: 410px;
+	}
+	.seccion2 .caja{
+		left: -145px;
 	}
 }
 @media screen and (min-width: 768px){
-
 	.seccion2 .content-seccion2 .header{
 		display: none;
 	}
+
 	.seccion2 .content-seccion2 .image-content2 {
 		padding: 0px 28px;
   }
@@ -126,28 +142,49 @@ transition: 0.5s;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		text-align: center;
-		margin-top: 80px;
+		text-align: initial;
 		color: #3e5162;
 	}
-	.seccion2 .content-seccion2 .image-content2 a{
+	.seccion2 .content-seccion2 .image-content2 .header p {
+		padding: 10px 0;
+	}
+
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses{
+		display: flex;
+		flex-direction: column;
+	}
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses a{
 		text-decoration: none;
 		font-size: 14px;
 		line-height: 26px;
 		transition: 0.5s;
 		color :#a2abb2
 	}
-	.seccion2 .content-seccion2 .image-content2 a:hover{
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses a:hover{
 		color: #3e5162;
 		font-weight:bold;
 	}
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses .cinco.select {
+    margin: 0px 0px;
+		position: relative;
+		color: #3e5162;
+		font-weight:bold;
+	}
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses .cinco.select::after {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 1px;
+		background:#3096d4;
+		position: absolute;
+		top: calc(50% - 0.5px);
+		left: -30px;
+		bottom: 100%;
+	}
 	.seccion2 .background{
-		margin-top: 80px;
+		margin-top: 20px;
     padding: initial;
 		margin-right: 20px;
-	}
-	.seccion2 .background img{
-		width: 100%
 	}
 	.seccion2 .content-seccion2 .Parraf {
     display: block;
@@ -157,72 +194,53 @@ transition: 0.5s;
 		flex-direction: row;
 		justify-content: center;
 	}
+	.seccion2 .image-content2 .Parraf .footer .Well{
+		display: none;
+	}
+	.seccion2 .image-content2 .Parraf .footer .points-incontent{
+		display: none;
+	}
+	.seccion2 .content-seccion2 .Parraf .footer .content-learn {
+		justify-content: flex-start;
+		margin-top: 40px;
+	}
 	.seccion2 .caja{
 		width: 400px;
-		left: -175px;
+		left: -164px;
 	}
+
 }
 @media screen and (min-width: 900px){
 	.seccion2 .background {
-    margin-right: 30px;
-	}
-	.seccion2 .content-seccion2 .header p {
-	    font-size: 16px;
-	    line-height: 22px;
+    	margin-right: 30px;
 	}
 	.seccion2 .content-seccion2 .header h2 {
 	    font-size: 22px;
 	    line-height: 22px;
 	}
-.seccion2 .content-seccion2 .image-content2 {
-		padding: 0px 40px;
-  }
-.seccion2 .content-seccion2 .image-content2 a {
-    font-size: 16px;
-    line-height: 28px;
-}
-.seccion2 .content-seccion2 .footer{
-	margin-top: 110px;
-}
-.seccion2 .content-seccion2 .footer a {
-    font-size: 20px;
-}
-.seccion2 .content-seccion2 .footer .Well {
-	display: none;
-}
-.seccion2 .content-seccion2 .footer .points-incontent {
-display: none;
-}
-
+	.seccion2 .content-seccion2 .image-content2 .Parraf .Courses a{
+			line-height: 30px;
+	}
+	.seccion2 .content-seccion2 .image-content2 .footer{
+			margin-top: 40px;
+	}
 }
 @media screen and (min-width: 1000px){
 	.seccion2 .background {
-    margin-right: 40px;
+    	margin-right: 40px;
 	}
-	.seccion2 .background img {
-    width: 504px;
-}
-.seccion2 .content-seccion2 .header p {
-padding: initial;
-margin-top: 20px;
-}
+	.seccion2 .content-seccion2 .header p {
+			padding: initial;
+			margin-top: 10px;
+	}
 	.seccion2 .content-seccion2 .image-content2 {
-			padding: 0px 50px;
-	  }
-		.seccion2 .content-seccion2 .image-content2 .header {
-		    text-align: left;
-		}
-		.seccion2 .content-seccion2 .image-content2 a {
-		    line-height: 32px;
-		}
-		.seccion2 .content-seccion2 .Parraf {
-    width: 400px;
-}
-.seccion2 .caja {
+			padding: 0px 60px;
+	}
+	.seccion2 .content-seccion2 .image-content2 .header {
+		  text-align: left;
+	}
+	.seccion2 .caja {
     width: 500px;
 	  left: -200px;
-}
-.seccion2 .content-seccion2 .footer a {
-	font-size: 20px;
-}
+	}
 }

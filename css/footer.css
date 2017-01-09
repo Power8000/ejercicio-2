@@ -1,4 +1,4 @@
-.final .contenedor{
+.final{
   background: #213246;
   padding: 30px;
   box-sizing: border-box;
@@ -17,7 +17,7 @@
   margin-right: 5px;
 }
 .final .first-part{
-  border-bottom: 0.4px solid #99acbd;
+  border-bottom: 1px solid #354b60;
   margin-bottom: 30px;
 }
 .final .first-part .contenido{
@@ -50,7 +50,7 @@
   font-weight: bold;
 }
 .final .second-part{
-  border-bottom: 0.4px solid #99acbd;
+  border-bottom: 1px solid #354b60;
 }
 .final .second-part .weekdays{
   color: #99acbd;
@@ -72,7 +72,7 @@
 }
 .final .second-part .bottom .Ufaberread{
   background: #3598db;
-  padding: 12px 22px;/*//*/
+  padding: 12px 22px;
   border-radius: 20px;
   color: white;
   text-align: center;
@@ -84,7 +84,7 @@
 }
 .final .third-part{
   margin-top: 30px;
-  border-bottom: 0.4px solid #99acbd;
+  border-bottom: 1px solid #354b60;
 }
 .final .third-part span{
   color: #99acbd;
@@ -94,7 +94,7 @@
 .final .third-part p{
   text-decoration: none;
   line-height: 18px;
-  font-size: 14px;
+  font-size: 12px;
   color: #d9e6ef;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -125,41 +125,42 @@ justify-content: center;
 margin-top: 20px;
 }
 .final .trt .icono img{
-  margin-right: 5px;
+  margin-right: 10px;
 }
-
 body {
   height: 100%;
 }
 @media screen and (min-width: 768px){
-  .final .contenedor {
+  .final{
       background: #213246;
       padding: 30px;
       box-sizing: border-box;
   }
   .final .first-part {
-    border-bottom: 0.4px solid #99acbd;
+    border-bottom: 1px solid #354b60;
     margin-bottom: 30px;
     padding: 0 50px;
     border: none;
-
 }
 .final .second-part {
-    border-bottom: 0.4px solid #99acbd;
+    border-bottom: 1px solid #354b60;
     margin-right: 10px;
     border:none;
-    border-left: 0.4px solid #99acbd;
+    border-left: 1px solid #354b60;
 }
 .final .second-part .contenidos2{
     margin-left: 30px;
 }
 .final .third-part {
-    border-bottom: 0.4px solid #99acbd;
+    border-bottom: 1px solid #354b60;
     padding: 0 40px;
     margin-top: 0;
     border: none;
-    border-left: 0.4px solid #99acbd;
+    border-left: 1px solid #354b60;
     margin-left: 30px;
+}
+.final .third-part p{
+    font-size: 14px;
 }
 .final .first-part .contenido{
   display: flex;
@@ -174,7 +175,7 @@ body {
   margin-bottom: 30px;
 }
 .final .fourth-part .trt{
-    border-top: 0.4px solid #99acbd;
+    border-top: 1px solid #354b60;
     display: flex;
     flex-direction: row;
     align-items: center;

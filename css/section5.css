@@ -1,4 +1,4 @@
-.seccion5 .contenedor{
+.seccion5{
   padding: 60px 25px;
   box-sizing: border-box;
 }
@@ -107,7 +107,7 @@
     background: #a2abb2;
 }
 @media screen and (min-width: 480px){
-  .seccion5 .contenedor {
+  .seccion5{
     padding: 60px 30px;
   }
 }
@@ -115,7 +115,7 @@
   .seccion5 .content-imgs .imgs img{
     width: 100%;
   }
-  .seccion5 .contenedor {
+  .seccion5{
     padding: 60px 40px;
   }
   .seccion5 .comentarios{

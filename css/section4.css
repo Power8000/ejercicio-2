@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 .seccion4 .imagen{
   position: absolute;
@@ -75,16 +75,17 @@
 }
 .seccion4 .footer{
   width: 80%;
-  padding: 30px;
+  padding: 30px 30px 0 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 4;
 }
 .seccion4 .footer h3{
   font-size: 20px;
   line-height: 20px;
   color: #374a5b;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .seccion4 .footer p{
   font-size: 14px;
@@ -93,24 +94,30 @@
 }
 .seccion4 .footer .BecometoInstructor{
   background: #f39c0f;
-  padding: 12px 22px;
+  padding: 10px 15px;
   border-radius: 20px;
   color: white;
   text-align: center;
   display: flex;
   flex-direction: row;
   text-decoration: none;
-  margin-top: 30px;
+  margin-top: 15px;
   align-self: baseline;
 }
 .seccion4 .caja{
+  display: flex;
   position: absolute;
-  width: 150px;
-  height: 150px;
-  bottom: -40px;
+  width: 100%;
+  height: 200px;
+  bottom: -48px;
+  overflow: hidden;
+}
+.seccion4 .caja .background{
+  position: absolute;
+  width: 185px;
   right: -40px;
 }
-.seccion4 .caja img{
+.seccion4 .caja .background img{
   width: 100%;
 }
 .mostrar{
@@ -124,28 +131,20 @@
   .seccion4 .header h3 {
     font-size: 20px;
   }
-  .seccion4 .caja{
-    width: 170px;
-    height: 170px;
-  }
 
 }
 @media screen and (min-width: 768px){
-  .seccion4 .caja {
-    width: 200px;
-    height: 200px;
-    bottom: -40px;
-    right: -20px;
+  .seccion4 .caja{
+    height: 270px;
+    bottom: -70px;
+  }
+  .seccion4 .caja .background{
+    width: 260px;
+    height: 260px;
+    right: -70px;
   }
 }
-
 @media screen and (min-width: 900px){
-  .seccion4 .caja {
-      width: 250px;
-      height: 250px;
-  }
-}
-@media screen and (min-width: 1000px){
   .seccion4 .contenedor{
     display: flex;
     justify-content: center;
@@ -185,25 +184,20 @@
     padding: 0 50px;
     width: 100%;
   }
-  .seccion4 .contenedor .second-part {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 50px;
-  }
   .seccion4 .contenedor .target .description{
     display: flex;
   }
   .seccion4 .footer{
     width: 80%;
-    padding: 50px;
+    padding: 0 50px 50px 50px;
   }
   .seccion4 .caja{
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    bottom: -80px;
-    right: 10px;
+    height: 330px;
+  }
+  .seccion4 .caja .background{
+    height: 310px;
+    width: 310px;
+    right: -10px;
   }
   .seccion4 .footer .BecometoInstructor{
     font-size: 18px;

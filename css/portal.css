@@ -1,33 +1,44 @@
 .portal{
 	position: relative;
-}
-
-.portal .background{
-	position: relative;
-	font-size: 0;
-}
-.portal .background .destock{
-	display: none;
-}
-.portal .background img{
+	height: 100%;
 	width: 100%;
 }
-.portal .background .cap{
-	position: absolute;
-	top: 0;
-	left: 0;
+
+.portal .brocontent{
+	display: flex;
 	width: 100%;
 	height: 100%;
-
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+	justify-content: center;
+	overflow: hidden;
 }
-
-.portal .menu{
-	position: absolute;
-	top: 10%;
-	left: 0;
+.portal .background{
 	width: 100%;
-
+	height: 100%;
+	position: relative;
+	font-size: 0;
+	overflow: hidden;
+}
+.portal .background img{
+	height: 100%;
+	width: 100%;
+}
+.portal .brocontent .background .destock{
+	display: none;
+}
+.portal .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+		top: 0;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+}
+.portal .menu{
+	padding-top: 15px;
+	padding-bottom: 30px;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -41,39 +52,38 @@
 .portal .logo img{
 	width: 30px;
 	align-self: flex-end;
-	margin-right: 10px;
+	margin-right: 15px;
 }
 .portal .logo span{
-	color: white;
+	font-size: 22px;
+	color: darkgray;
 }
-
 .portal .access{
 	display: none;
 }
 
 .portal .content-description{
-	position: absolute;
-	top: calc(50% - 110px);
-	left: 0;
 	width: 100%;
 }
 .portal .description{
 	width: 100%;
 	color: white;
 	text-align: center;
-	padding: 0 30px;
+	padding: 0 25px;
 	box-sizing: border-box;
 }
 .portal .description h1{
-	font-size: 18px;
-	line-height: 20px;
+	font-size: 21px;
+	line-height: 24px;
 	margin-bottom: 30px;
+	margin-top: 10px;
 }
-.portal .description p{
-	font-size: 14px;
-	line-height: 20px;
+.portal .description h3{
+	font-size: 17px;
+	line-height: 24px;
 	color: rgba(255, 255, 255, 0.8);
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	font-family: inherit;
 }
 .portal .description .buttons{
 	display: flex;
@@ -81,22 +91,23 @@
 }
 .portal .description .buttons a{
 	align-self: center;
-	font-size: 14px;
-	border-radius: 17px;
+	font-size: 16px;
+	border-radius: 21px;
 	color: white;
 	text-decoration: none;
 }
 .portal .description .buttons .start{
 	background: #14c752;
-	margin-bottom: 10px;
-	padding: 10px 33px;
+	margin-bottom: 14px;
+	padding: 12px 33px;
 }
 .portal .description .buttons .browse{
-	border: 1px solid white;
+	border: 2px solid rgba(255,255,255,0.3);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 10px 15px;
+	padding: 12px 15px;
+	background: rgba(0,0,0,0.3);
 }
 .portal .description .buttons .browse:hover{
 	border: 1px solid rgba(255, 255, 255, 0);
@@ -111,13 +122,10 @@
 	align-self: center;
 }
 .portal .arrow-bottom{
-	position: absolute;
-	bottom: 7%;
-	left: 0;
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
+}
 }
 
 @media screen and (min-width: 480px){
@@ -125,74 +133,42 @@
 		display: flex;
 		justify-content: center;
 	}
-	.portal .description{
-		width: 400px;
+}
+@media screen and (min-width: 524px){
+	.portal .brocontent .background .mobile-tablet{
+		display: none;
+	}
+	.portal .brocontent .background .destock{
+		display: block;
+		width: auto;
 	}
 }
 @media screen and (min-width: 768px){
-	portal .logo img {
-		width: 40px;
-	}
 	.portal .logo span {
-		font-size: 30px;
+		font-size: 24px;
    }
-	.portal .description{
-		width: 600px;
-	}
 	.portal .description h1{
-		font-size: 30px;
-		line-height: 32px;
+		font-size: 25px;
+		line-height: 30px;
 
 	}
-	.portal .description p{
-		font-size: 22px;
-		line-height: 30px;
+	.portal .description h3{
+		font-size: 20px;
+		line-height: 26px;
 		color: rgba(255, 255, 255, 0.8);
 		margin-bottom: 100px;
 	}
-	.portal .description .buttons a{
-		font-size: 18px;
-		border-radius: 23px;
-	}
-	.portal .description .buttons .start{
-		background: #14c752;
-		margin-bottom: 20px;
-		padding: 14px 33px;
-	}
-	.portal .description .buttons .browse{
-		border: 1px solid white;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		padding: 14px 15px;
-	}
-	.portal .description .buttons .browse img {
-    width: 18px;
-   }
-
 }
-@media screen and (min-width: 1000px){
-	.portal .background .mobile-tablet{
-		display: none;
-	}
-	.portal .background .destock{
-		display: block;
-	}
+@media screen and (min-width: 900px){
 	.portal .menu{
 		top: 5%;
 		display: flex;
 		justify-content: space-between;
-		padding: 0 50px;
+		padding: 0 20px;
 		box-sizing: border-box;
 	}
 	.portal .access{
 		display: flex;
-	}
-	.portal .content-description{
-		top: calc(50% - 165px);
-	}
-	.portal .description{
-		width: 90%;
 	}
 	.access{
 				display: flex;
@@ -202,7 +178,7 @@
 				text-decoration: none;
 	}
 	.access a{
-		font-size: 20px;
+		font-size: 14px;
 		color: white;
 		text-decoration: none;
 	}
@@ -220,19 +196,16 @@
 	}
   .signup{
 		background: #1FA6F4;
-		padding: 12px 30px;
+		padding: 10px 20px;
 		border-radius: 20px;
 		margin-left: 20px;
 	}
-	.portal .logo img {
-    width: 40px;
-  }
 	.portal .description .buttons {
     flex-direction: row;
     justify-content: center;
   }
 	.portal .description .buttons .browse {
-		margin-bottom: 20px;
+		margin-bottom: 14px;
 		margin-left: 20px;
 	}
 }
